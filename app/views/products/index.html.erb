@@ -7,12 +7,24 @@
     <% end %>
   </ul>
   
-  <p>Three Most Recent Products</p>
+  <h4>Three Most Recent Products</h4>
   <ul>
     <% @products.three_most_recent.each do |product| %>
       <li><%= link_to product.name, product_path(product) %></li>
     <% end %>
   </ul>
+
+  <h4>Most Reviewed Product</h4>
+  <% if @products.most_reviews.any? %>
+    <ul>
+      <% @products.most_reviews.each do |product| %>
+        <li><%= link_to product.name, product_path(product) %></li>
+      <% end %>
+    </ul>
+  <% else %>
+    <p>There are no reviewed products<p>
+  <% end %>
+  
 <% else %>
       <p>There are no products yet.</p>
 <% end %>
