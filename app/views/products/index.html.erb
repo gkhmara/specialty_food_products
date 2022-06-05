@@ -1,13 +1,23 @@
 <h1>Products</h1>
-
+<h3>All Products<h3>
 <% if @products.any? %>
   <ul>
     <% @products.each do |product| %>
       <li><%= link_to product.name, product_path(product) %></li>
     <% end %>
   </ul>
+  
+  <p>Three Most Recent Products</p>
+  <ul>
+    <% @products.three_most_recent.each do |product| %>
+      <li><%= link_to product.name, product_path(product) %></li>
+    <% end %>
+  </ul>
 <% else %>
       <p>There are no products yet.</p>
 <% end %>
+
+
+    
 
 <p><%= link_to "Create new product", new_product_path %></p>
