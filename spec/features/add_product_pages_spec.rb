@@ -18,17 +18,5 @@ describe "the add a product process" do
     expect(page).to have_content "Name can't be blank"
   end
 
-  it "gives an error when no cost is entered" do
-    visit new_product_path
-    click_on 'Create Product'
-    expect(page).to have_content "Cost can't be blank"
-  end
-
-  it "gives an error when no country is entered" do
-    visit new_product_path
-    click_on 'Create Product'
-    expect(page).to have_content "Country of origin can't be blank"
-  end
-
 end
 
