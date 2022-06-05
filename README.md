@@ -23,7 +23,7 @@ This script allows a user to enter in product and add a review to those products
 
 * Clone the repo from Github
 * Navagate to root project folder *specialty_food_prodcuts* within the terminal or console
-* Start a server with the command *postgres*
+* Open the terminal and start a server with the command *postgres*
 * Create a new tab in the terminal and type the command *rails s*
 * Open a web browser and navigate to *localhost:3000*
 
