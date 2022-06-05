@@ -1,6 +1,7 @@
 <h1>Products</h1>
-<h3>All Products<h3>
+
 <% if @products.any? %>
+  <h3>All Products<h3>
   <ul>
     <% @products.each do |product| %>
       <li><%= link_to product.name, product_path(product) %></li>
