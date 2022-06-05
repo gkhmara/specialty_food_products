@@ -15,6 +15,8 @@ class Product < ApplicationRecord
     .limit(1)
   )}
 
+  scope :usa, -> {(where(country_of_origin: "USA"))}
+
   private
     def titleize_product
       self.name = self.name.titleize
