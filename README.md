@@ -23,8 +23,16 @@ This script allows a user to enter in product and add a review to those products
 
 * Clone the repo from Github
 * Navagate to root project folder *specialty_food_prodcuts* within the terminal or console
-* Open the terminal and start a server with the command *postgres*
-* Create a new tab in the terminal and type the command *rails s*
+* type to terminal or console:
+          *rake db:create*
+          *rake db:migrate*
+          *rake db:test:prepare*
+* If you would like to seed the database with information type:
+          *rake db:seed*
+* To install Gems type:
+          *bundle install*
+* Type the command *postgres* to start server
+* Create a new tab in the terminal or console and type the command *rails s*
 * Open a web browser and navigate to *localhost:3000*
 
 ## Known Bugs
